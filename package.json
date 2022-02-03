@@ -62,7 +62,6 @@
     "clean": "npm run clean-lib && npm run clean-dist",
     "reset": "npm run clean && pnpm i",
     "prepare": "npm run clean && npm run lint && npm run lib && npm run dist",
-    "all:prepublish": "npm run versioning",
     "all:publish": "./scripts/batch/publish.sh"
   },
   "keywords": [
