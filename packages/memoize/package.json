@@ -13,10 +13,7 @@
     "url": "https://github.com/afialapis/farrapa/issues"
   },
   "homepage": "https://farrapa.afialapis.com/",
-  "main": "src/index.js",
-  "publishConfig": {
-    "main": "lib/index.js"
-  },
+  "main": "lib/index.js",
   "cjs": "dist/farrapa-memoize.cjs.js",
   "module": "dist/farrapa-memoize.es.js",
   "browser": "dist/farrapa-memoize.umd.js",
