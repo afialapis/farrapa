@@ -65,7 +65,9 @@
 
     "clean": "npm run clean-lib && npm run clean-dist",
     "reset": "npm run clean && pnpm i",
-    "prepare": "npm run lint && npm run lib && npm run dist"
+    "prepare": "npm run lint && npm run lib && npm run dist",
+
+    "all:publish": "pnpm publish --filter checkers && pnpm publish --filter collections && pnpm publish --filter colors && pnpm publish --filter encoding && pnpm publish --filter iter && pnpm publish --filter memoize && pnpm publish --filter numbers && pnpm publish --filter objects && pnpm publish --filter pretty-console && pnpm publish --filter promises && pnpm publish --filter strings && pnpm publish --filter url"
   },
   "keywords": [
     "js",
