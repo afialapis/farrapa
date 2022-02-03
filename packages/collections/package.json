@@ -15,7 +15,10 @@
   },
   "homepage": "https://farrapa.afialapis.com/",
 
-  "main": "lib/index.js",
+  "main": "src/index.js",
+  "publishConfig": {
+    "main": "lib/index.js"
+  },
   "cjs": "dist/farrapa-collections.cjs.js",
   "module": "dist/farrapa-collections.es.js",
   "browser": "dist/farrapa-collections.umd.js",
