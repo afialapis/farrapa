@@ -1,0 +1,12 @@
+npm run colors:clean-lib
+npm run numbers:clean-lib
+npm run checkers:clean-lib
+npm run collections:clean-lib
+npm run encoding:clean-lib
+npm run iter:clean-lib
+npm run memoize:clean-lib
+npm run objects:clean-lib
+npm run pretty-console:clean-lib
+npm run promises:clean-lib
+npm run strings:clean-lib
+npm run url:clean-lib

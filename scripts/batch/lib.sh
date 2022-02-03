@@ -1,0 +1,12 @@
+npm run colors:lib
+npm run numbers:lib
+npm run checkers:lib
+npm run collections:lib
+npm run encoding:lib
+npm run iter:lib
+npm run memoize:lib
+npm run objects:lib
+npm run pretty-console:lib
+npm run promises:lib
+npm run strings:lib
+npm run url:lib

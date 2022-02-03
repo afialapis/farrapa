@@ -57,17 +57,17 @@
     "lint": "eslint packages",
     "test": "node test/index.js",    
     
-    "clean-lib": "npm run checkers:clean-lib && npm run collections:clean-lib && npm run colors:clean-lib && npm run encoding:clean-lib && npm run iter:clean-lib && npm run memoize:clean-lib && npm run numbers:clean-lib && npm run objects:clean-lib && npm run pretty-console:clean-lib && npm run promises:clean-lib && npm run strings:clean-lib && npm run url:clean-lib",
-    "lib": "npm run checkers:lib && npm run collections:lib && npm run colors:lib && npm run encoding:lib && npm run iter:lib && npm run memoize:lib && npm run numbers:lib && npm run objects:lib && npm run pretty-console:lib && npm run promises:lib && npm run strings:lib && npm run url:lib",
+    "clean-lib": "./scripts/batch/clean-lib.sh",
+    "lib": "./scripts/batch/lib.sh",
     
-    "clean-dist": "npm run checkers:clean-dist && npm run collections:clean-dist && npm run colors:clean-dist && npm run encoding:clean-dist && npm run iter:clean-dist && npm run memoize:clean-dist && npm run numbers:clean-dist && npm run objects:clean-dist && npm run pretty-console:clean-dist && npm run promises:clean-dist && npm run strings:clean-dist && npm run url:clean-dist",
-    "dist": "npm run clean-dist && node scripts/run.js",
+    "clean-dist": "./scripts/batch/clean-dist.sh",
+    "dist": "node scripts/rollup/run.js",
 
     "clean": "npm run clean-lib && npm run clean-dist",
     "reset": "npm run clean && pnpm i",
-    "prepare": "npm run lint && npm run lib && npm run dist",
+    "prepare": "npm run clean && npm run lint && npm run lib && npm run dist",
 
-    "all:publish": "pnpm publish --filter farrapa-checkers && pnpm publish --filter farrapa-collections && pnpm publish --filter farrapa-colors && pnpm publish --filter farrapa-encoding && pnpm publish --filter farrapa-iter && pnpm publish --filter farrapa-memoize && pnpm publish --filter farrapa-numbers && pnpm publish --filter farrapa-objects && pnpm publish --filter farrapa-pretty-console && pnpm publish --filter farrapa-promises && pnpm publish --filter farrapa-strings && pnpm publish --filter farrapa-url"
+    "all:publish": "./scripts/batch/publish.sh"
   },
   "keywords": [
     "js",

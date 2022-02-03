@@ -1,13 +1,15 @@
 require('@babel/register')
 
 const package_names= [
+  // these first, other s will depend on them
+  'colors',
+  'numbers',
+
   'checkers',
   'collections',
-  'colors',
   'encoding',
   'iter',
   'memoize',
-  'numbers',
   'objects',
   'pretty-console',
   'promises',
@@ -15,5 +17,5 @@ const package_names= [
   'url'
 ]
 
-const {dist_all} = require('./rollup/dist')
+const {dist_all} = require('./dist')
 dist_all(package_names)

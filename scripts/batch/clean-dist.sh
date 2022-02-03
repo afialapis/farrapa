@@ -1,0 +1,12 @@
+npm run colors:clean-dist
+npm run numbers:clean-dist
+npm run checkers:clean-dist
+npm run collections:clean-dist
+npm run encoding:clean-dist
+npm run iter:clean-dist
+npm run memoize:clean-dist
+npm run objects:clean-dist
+npm run pretty-console:clean-dist
+npm run promises:clean-dist
+npm run strings:clean-dist
+npm run url:clean-dist
