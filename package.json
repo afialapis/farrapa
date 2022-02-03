@@ -56,6 +56,7 @@
     "test": "node test/index.js",
     "clean-lib": "./scripts/batch/clean-lib.sh",
     "lib": "./scripts/batch/lib.sh",
+    "versioning": "python -m scripts/version/versioning",
     "clean-dist": "./scripts/batch/clean-dist.sh",
     "dist": "node scripts/rollup/run.js",
     "clean": "npm run clean-lib && npm run clean-dist",
