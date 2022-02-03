@@ -41,9 +41,8 @@ def package_versioning(filepath, vtype= 'patch'):
 def monorepo_versioning(rootdir, package_list, vtype= 'patch', verbose= True):
   pr= lambda x: _log(x, verbose)
 
-  pr('[versioning......')
   for pkg in package_list:
-    pr('[versioning] %s' % pkg)
+    pr('%s...' % pkg)
     filepath= os.path.join(rootdir, 'packages', pkg, 'package.json')
     package_versioning(filepath, vtype= vtype)
 
