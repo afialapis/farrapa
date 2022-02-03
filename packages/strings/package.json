@@ -1,0 +1,26 @@
+{
+  "name": "@farrapa/strings",
+  "version": "0.0.1",
+  "description": "some simple utils for strings",
+  "author": "Donato Lorenzo <donato@afialapis.com>",
+  "license": "MIT",
+  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afialapis/farrapa.git",
+    "directory": "packages/strings"
+  },
+  "bugs": {
+    "url": "https://github.com/afialapis/farrapa/issues"
+  },
+  "homepage": "https://farrapa.afialapis.com/",
+
+  "main": "lib/index.js",
+  "cjs": "dist/@farrapa/strings.cjs.js",
+  "module": "dist/@farrapa/strings.es.js",
+  "browser": "dist/@farrapa/strings.umd.js",
+  
+  "dependencies": {
+
+  }
+}

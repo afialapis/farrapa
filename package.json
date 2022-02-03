@@ -1,0 +1,93 @@
+{
+  "name": "farrapa",
+  "private": true,
+  "description": "diverse utils used by afialapis",
+  "author": "Donato Lorenzo <donato@afialapis.com>",
+  "contributors": [
+    "Donato Lorenzo <donato@afialapis.com>"
+  ],
+  "license": "MIT",
+  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afialapis/farrapa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/afialapis/farrapa/issues"
+  },
+  "homepage": "https://farrapa.afialapis.com/",
+  "scripts": {
+    "checkers:clean-lib": "rm -rf packages/checkers/lib && mkdir packages/checkers/lib",
+    "checkers:lib": "npm run checkers:clean-lib && babel packages/checkers/src -d packages/checkers/lib",
+    "checkers:clean-dist": "rm -rf packages/checkers/dist && mkdir packages/checkers/dist",
+    "collections:clean-lib": "rm -rf packages/collections/lib && mkdir packages/collections/lib",
+    "collections:lib": "npm run collections:clean-lib && babel packages/collections/src -d packages/collections/lib",
+    "collections:clean-dist": "rm -rf packages/collections/dist && mkdir packages/collections/dist",
+    "colors:clean-lib": "rm -rf packages/colors/lib && mkdir packages/colors/lib",
+    "colors:lib": "npm run colors:clean-lib && babel packages/colors/src -d packages/colors/lib",
+    "colors:clean-dist": "rm -rf packages/colors/dist && mkdir packages/colors/dist",
+    "encoding:clean-lib": "rm -rf packages/encoding/lib && mkdir packages/encoding/lib",
+    "encoding:lib": "npm run encoding:clean-lib && babel packages/encoding/src -d packages/encoding/lib",
+    "encoding:clean-dist": "rm -rf packages/encoding/dist && mkdir packages/encoding/dist",
+    "iter:clean-lib": "rm -rf packages/iter/lib && mkdir packages/iter/lib",
+    "iter:lib": "npm run iter:clean-lib && babel packages/iter/src -d packages/iter/lib",
+    "iter:clean-dist": "rm -rf packages/iter/dist && mkdir packages/iter/dist",
+    "memoize:clean-lib": "rm -rf packages/memoize/lib && mkdir packages/memoize/lib",
+    "memoize:lib": "npm run memoize:clean-lib && babel packages/memoize/src -d packages/memoize/lib",
+    "memoize:clean-dist": "rm -rf packages/memoize/dist && mkdir packages/memoize/dist",
+    "numbers:clean-lib": "rm -rf packages/numbers/lib && mkdir packages/numbers/lib",
+    "numbers:lib": "npm run numbers:clean-lib && babel packages/numbers/src -d packages/numbers/lib",
+    "numbers:clean-dist": "rm -rf packages/numbers/dist && mkdir packages/numbers/dist",
+    "objects:clean-lib": "rm -rf packages/objects/lib && mkdir packages/objects/lib",
+    "objects:lib": "npm run objects:clean-lib && babel packages/objects/src -d packages/objects/lib",
+    "objects:clean-dist": "rm -rf packages/objects/dist && mkdir packages/objects/dist",
+    "pretty-console:clean-lib": "rm -rf packages/pretty-console/lib && mkdir packages/pretty-console/lib",
+    "pretty-console:lib": "npm run pretty-console:clean-lib && babel packages/pretty-console/src -d packages/pretty-console/lib",
+    "pretty-console:clean-dist": "rm -rf packages/pretty-console/dist && mkdir packages/pretty-console/dist",
+    "promises:clean-lib": "rm -rf packages/promises/lib && mkdir packages/promises/lib",
+    "promises:lib": "npm run promises:clean-lib && babel packages/promises/src -d packages/promises/lib",
+    "promises:clean-dist": "rm -rf packages/promises/dist && mkdir packages/promises/dist",
+    "strings:clean-lib": "rm -rf packages/strings/lib && mkdir packages/strings/lib",
+    "strings:lib": "npm run strings:clean-lib && babel packages/strings/src -d packages/strings/lib",
+    "strings:clean-dist": "rm -rf packages/strings/dist && mkdir packages/strings/dist",
+    "url:clean-lib": "rm -rf packages/url/lib && mkdir packages/url/lib",
+    "url:lib": "npm run url:clean-lib && babel packages/url/src -d packages/url/lib",
+    "url:clean-dist": "rm -rf packages/url/dist && mkdir packages/url/dist",
+
+    "lint": "eslint packages",
+    "test": "node test/index.js",    
+    
+    "clean-lib": "npm run checkers:clean-lib && npm run collections:clean-lib && npm run colors:clean-lib && npm run encoding:clean-lib && npm run iter:clean-lib && npm run memoize:clean-lib && npm run numbers:clean-lib && npm run objects:clean-lib && npm run pretty-console:clean-lib && npm run promises:clean-lib && npm run strings:clean-lib && npm run url:clean-lib",
+    "lib": "npm run checkers:lib && npm run collections:lib && npm run colors:lib && npm run encoding:lib && npm run iter:lib && npm run memoize:lib && npm run numbers:lib && npm run objects:lib && npm run pretty-console:lib && npm run promises:lib && npm run strings:lib && npm run url:lib",
+    
+    "clean-dist": "npm run checkers:clean-dist && npm run collections:clean-dist && npm run colors:clean-dist && npm run encoding:clean-dist && npm run iter:clean-dist && npm run memoize:clean-dist && npm run numbers:clean-dist && npm run objects:clean-dist && npm run pretty-console:clean-dist && npm run promises:clean-dist && npm run strings:clean-dist && npm run url:clean-dist",
+    "dist": "npm run clean-dist && node scripts/run.js",
+
+    "clean": "npm run clean-lib && npm run clean-dist",
+    "reset": "npm run clean && pnpm i",
+    "prepare": "npm run lint && npm run lib && npm run dist"
+  },
+  "keywords": [
+    "js",
+    "util"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/eslint-parser": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/register": "^7.15.3",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.5",
+    "@rollup/plugin-replace": "^3.0.1",
+    "eslint": "^8.0.1",
+    "rollup": "^2.58.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-node-externals": "^3.1.2",
+    "rollup-plugin-node-polyfills": "^0.2.1",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "dependencies": {},
+  "peerDependencies": {}
+}
