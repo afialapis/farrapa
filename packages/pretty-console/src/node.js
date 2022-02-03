@@ -1,5 +1,5 @@
 //const {inspect} = require('util')
-const {LIGHT_CYAN, LIGHT_BLUE, LIGHT_GREEN, YELLOW, LIGHT_RED, RED, WHITE} = require('@farrapa/colors')
+const {LIGHT_CYAN, LIGHT_BLUE, LIGHT_GREEN, YELLOW, LIGHT_RED, RED, WHITE} = require('farrapa-colors')
 
 function logger(color, _name) {
   return function() {

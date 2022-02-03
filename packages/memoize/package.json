@@ -1,5 +1,5 @@
 {
-  "name": "@farrapa/memoize",
+  "name": "farrapa-memoize",
   "version": "0.0.1",
   "description": "some simple utils for memoizes",
   "author": "Donato Lorenzo <donato@afialapis.com>",
@@ -16,9 +16,9 @@
   "homepage": "https://farrapa.afialapis.com/",
 
   "main": "lib/index.js",
-  "cjs": "dist/@farrapa/memoize.cjs.js",
-  "module": "dist/@farrapa/memoize.es.js",
-  "browser": "dist/@farrapa/memoize.umd.js",
+  "cjs": "dist/farrapa-memoize.cjs.js",
+  "module": "dist/farrapa-memoize.es.js",
+  "browser": "dist/farrapa-memoize.umd.js",
   
   "dependencies": {
 

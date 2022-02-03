@@ -1,4 +1,4 @@
-import {parseNum}  from '@farrapa/numbers'
+import {parseNum}  from 'farrapa-numbers'
 
 function chunkArray(myArray, chunk_size){
   let results = [];

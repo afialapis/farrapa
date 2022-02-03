@@ -1,5 +1,5 @@
 {
-  "name": "@farrapa/collections",
+  "name": "farrapa-collections",
   "version": "0.0.1",
   "description": "some simple utils for collections",
   "author": "Donato Lorenzo <donato@afialapis.com>",
@@ -16,15 +16,15 @@
   "homepage": "https://farrapa.afialapis.com/",
 
   "main": "lib/index.js",
-  "cjs": "dist/@farrapa/collections.cjs.js",
-  "module": "dist/@farrapa/collections.es.js",
-  "browser": "dist/@farrapa/collections.umd.js",
+  "cjs": "dist/farrapa-collections.cjs.js",
+  "module": "dist/farrapa-collections.es.js",
+  "browser": "dist/farrapa-collections.umd.js",
   
   "dependencies": {
-    "@farrapa/numbers": "workspace:../numbers"
+    "farrapa-numbers": "workspace:../numbers"
   },
   "peerDependencies": {
-    "@farrapa/numbers": "workspace:../numbers"
+    "farrapa-numbers": "workspace:../numbers"
   }
 }
 

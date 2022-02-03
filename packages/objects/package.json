@@ -1,5 +1,5 @@
 {
-  "name": "@farrapa/objects",
+  "name": "farrapa-objects",
   "version": "0.0.1",
   "description": "some simple utils for objects",
   "author": "Donato Lorenzo <donato@afialapis.com>",
@@ -16,9 +16,9 @@
   "homepage": "https://farrapa.afialapis.com/",
 
   "main": "lib/index.js",
-  "cjs": "dist/@farrapa/objects.cjs.js",
-  "module": "dist/@farrapa/objects.es.js",
-  "browser": "dist/@farrapa/objects.umd.js",
+  "cjs": "dist/farrapa-objects.cjs.js",
+  "module": "dist/farrapa-objects.es.js",
+  "browser": "dist/farrapa-objects.umd.js",
   
   "dependencies": {
 

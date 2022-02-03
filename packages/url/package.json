@@ -1,5 +1,5 @@
 {
-  "name": "@farrapa/url",
+  "name": "farrapa-url",
   "version": "0.0.1",
   "description": "some simple utils for url handling",
   "author": "Donato Lorenzo <donato@afialapis.com>",
@@ -16,9 +16,9 @@
   "homepage": "https://farrapa.afialapis.com/",
 
   "main": "lib/index.js",
-  "cjs": "dist/@farrapa/url.cjs.js",
-  "module": "dist/@farrapa/url.es.js",
-  "browser": "dist/@farrapa/url.umd.js",
+  "cjs": "dist/farrapa-url.cjs.js",
+  "module": "dist/farrapa-url.es.js",
+  "browser": "dist/farrapa-url.umd.js",
   
   "dependencies": {
 

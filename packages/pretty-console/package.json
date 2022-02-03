@@ -1,5 +1,5 @@
 {
-  "name": "@farrapa/pretty-console",
+  "name": "farrapa-pretty-console",
   "version": "0.0.1",
   "description": "prettify your console",
   "author": "Donato Lorenzo <donato@afialapis.com>",
@@ -16,14 +16,14 @@
   "homepage": "https://farrapa.afialapis.com/",
 
   "main": "lib/index.js",
-  "cjs": "dist/@farrapa/pretty-console.cjs.js",
-  "module": "dist/@farrapa/pretty-console.es.js",
-  "browser": "dist/@farrapa/pretty-console.umd.js",
+  "cjs": "dist/farrapa-pretty-console.cjs.js",
+  "module": "dist/farrapa-pretty-console.es.js",
+  "browser": "dist/farrapa-pretty-console.umd.js",
   
   "dependencies": {
-    "@farrapa/colors": "workspace:../colors"
+    "farrapa-colors": "workspace:../colors"
   },
   "peerDependencies": {
-    "@farrapa/colors": "workspace:../colors"
+    "farrapa-colors": "workspace:../colors"
   }
 }

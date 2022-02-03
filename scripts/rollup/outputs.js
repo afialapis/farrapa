@@ -5,7 +5,7 @@ import {toTitleCase} from '../../packages/strings/src'
 const minifyExtension = pathToFile => pathToFile.replace(/\.js$/, '.min.js');
 
 const titlefyPkgName = (package_name) => {
-  const suffix= package_name.split('/')[1]
+  const suffix= package_name.replace('farrapa-', '')
   return `farrapa${toTitleCase(suffix)}`
 
 }

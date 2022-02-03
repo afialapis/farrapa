@@ -1,5 +1,5 @@
 {
-  "name": "@farrapa/encoding",
+  "name": "farrapa-encoding",
   "version": "0.0.1",
   "description": "some simple utils for encodings",
   "author": "Donato Lorenzo <donato@afialapis.com>",
@@ -16,9 +16,9 @@
   "homepage": "https://farrapa.afialapis.com/",
 
   "main": "lib/index.js",
-  "cjs": "dist/@farrapa/encoding.cjs.js",
-  "module": "dist/@farrapa/encoding.es.js",
-  "browser": "dist/@farrapa/encoding.umd.js",
+  "cjs": "dist/farrapa-encoding.cjs.js",
+  "module": "dist/farrapa-encoding.es.js",
+  "browser": "dist/farrapa-encoding.umd.js",
   
   "dependencies": {
 

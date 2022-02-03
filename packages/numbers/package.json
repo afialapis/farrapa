@@ -1,5 +1,5 @@
 {
-  "name": "@farrapa/numbers",
+  "name": "farrapa-numbers",
   "version": "0.0.1",
   "description": "some simple utils for numbers",
   "author": "Donato Lorenzo <donato@afialapis.com>",
@@ -16,9 +16,9 @@
   "homepage": "https://farrapa.afialapis.com/",
 
   "main": "lib/index.js",
-  "cjs": "dist/@farrapa/numbers.cjs.js",
-  "module": "dist/@farrapa/numbers.es.js",
-  "browser": "dist/@farrapa/numbers.umd.js",
+  "cjs": "dist/farrapa-numbers.cjs.js",
+  "module": "dist/farrapa-numbers.es.js",
+  "browser": "dist/farrapa-numbers.umd.js",
   
   "dependencies": {
 
