@@ -1,5 +1,5 @@
 import { rollup } from 'rollup'
-import {RED, GREEN} from '../../packages/colors/src/codes'
+import {red, green} from '../../packages/colors/src/codes'
 
 async function rollupGenerateOutputs(bundle, outputOptionsList) {
   for (const outputOptions of outputOptionsList) {
@@ -67,7 +67,7 @@ async function rollupBuild(inputOptions, outputOptionsList) {
   } catch (error) {
     buildFailed = true;
     // do some error reporting
-    console.error(RED(error));
+    console.error(red(error));
   }
   if (bundle) {
     // closes the bundle
@@ -75,10 +75,10 @@ async function rollupBuild(inputOptions, outputOptionsList) {
   }
 
   if (buildFailed) {
-    console.log(RED(`[build] Errors when building ${inputOptions.input}`))
+    console.log(red(`[build] Errors when building ${inputOptions.input}`))
     process.exit(1)
   } else {
-    console.log(GREEN(`[build] Built ${inputOptions.input} successfully!`))
+    console.log(green(`[build] Built ${inputOptions.input} successfully!`))
   }
 }
 

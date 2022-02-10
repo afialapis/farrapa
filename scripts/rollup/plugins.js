@@ -13,14 +13,19 @@ const rollupInputPlugins= () => {
     replace({
       preventAssignment: true,
       'process.env.NODE_ENV': JSON.stringify(NODE_ENV)
-    }),    
+    }),
+    resolve(),
+    commonjs(),
     babel({
       exclude: 'node_modules/**',
       /*https://github.com/rollup/plugins/tree/master/packages/babel#babelhelpers*/
-      babelHelpers: 'bundled'
-    }),
-    resolve(),
-    commonjs()  
+      babelHelpers: 'bundled',
+      /*
+      presets: [
+          ["@babel/preset-env", {"targets": {"esmodules": true}}]
+      ]*/
+
+    })    
   ]
 
 }
