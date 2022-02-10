@@ -1,23 +1,19 @@
-import { PURPLE, LIGHT_PURPLE, RED, LIGHT_RED, GREEN,
-  LIGHT_GREEN, YELLOW, BLUE, LIGHT_BLUE, CYAN, 
-  LIGHT_CYAN, WHITE, GRAY, DARK_GRAY} from './codes'
+const codes = require('./codes')
 
-import { 
+const { 
   uncolor, 
   isTooDark, 
   shadeColor, 
   blendColors
- } from './mods'
+ } = require('./mods')
 
-import {
+const {
   hslToHex, 
   randomHex
-} from './hex'
+} = require('./hex')
 
-export { 
-  PURPLE, LIGHT_PURPLE, RED, LIGHT_RED, GREEN,
-  LIGHT_GREEN, YELLOW, BLUE, LIGHT_BLUE, CYAN, 
-  LIGHT_CYAN, WHITE, GRAY, DARK_GRAY,
+module.exports= { 
+  ...codes,
   uncolor, 
   isTooDark, 
   shadeColor, 

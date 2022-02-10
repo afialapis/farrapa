@@ -25,6 +25,7 @@
     "colors:clean-lib": "rm -rf packages/colors/lib && mkdir packages/colors/lib",
     "colors:lib": "npm run colors:clean-lib && babel packages/colors/src -d packages/colors/lib",
     "colors:clean-dist": "rm -rf packages/colors/dist && mkdir packages/colors/dist",
+    "colors:test": "node packages/colors/test/index.js",
     "encoding:clean-lib": "rm -rf packages/encoding/lib && mkdir packages/encoding/lib",
     "encoding:lib": "npm run encoding:clean-lib && babel packages/encoding/src -d packages/encoding/lib",
     "encoding:clean-dist": "rm -rf packages/encoding/dist && mkdir packages/encoding/dist",

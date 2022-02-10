@@ -1,5 +1,5 @@
 //const {inspect} = require('util')
-const {LIGHT_CYAN, LIGHT_BLUE, LIGHT_GREEN, YELLOW, LIGHT_RED, RED, WHITE} = require('farrapa-colors')
+const {magenta, cyan, blue, white, yellow, red, green_light} = require('farrapa-colors')
 
 function logger(color, _name) {
   return function() {
@@ -44,10 +44,10 @@ function qlogger(color) {
 }
 
 // Enable color logging
-console.silly   = logger(LIGHT_CYAN , 'SLY').bind(console)
-console.debug   = logger(LIGHT_BLUE , 'DBG').bind(console)
-console.verbose = logger(LIGHT_GREEN, 'VRB').bind(console)
-console.info    = logger(YELLOW     , 'INF').bind(console)
-console.warn    = logger(LIGHT_RED  , 'WRN').bind(console)
-console.error   = logger(RED        , 'ERR').bind(console)
-console.query   = qlogger(WHITE).bind(console)
+console.silly   = logger(magenta , 'SLY').bind(console)
+console.debug   = logger(cyan    , 'DBG').bind(console)
+console.verbose = logger(blue    , 'VRB').bind(console)
+console.info    = logger(white   , 'INF').bind(console)
+console.warn    = logger(yellow  , 'WRN').bind(console)
+console.error   = logger(red     , 'ERR').bind(console)
+console.query   = qlogger(green_light).bind(console)
