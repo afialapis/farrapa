@@ -1,12 +1,14 @@
-npm run colors:clean-dist
-npm run numbers:clean-dist
-npm run checkers:clean-dist
-npm run collections:clean-dist
-npm run encoding:clean-dist
-npm run iter:clean-dist
-npm run memoize:clean-dist
-npm run objects:clean-dist
-npm run pretty-console:clean-dist
-npm run promises:clean-dist
-npm run strings:clean-dist
-npm run url:clean-dist
+rm -rf packages/colors/dist && mkdir packages/colors/dist
+rm -rf packages/numbers/dist && mkdir packages/numbers/dist
+rm -rf packages/commons/dist && mkdir packages/commons/dist
+rm -rf packages/checkers/dist && mkdir packages/checkers/dist
+rm -rf packages/collections/dist && mkdir packages/collections/dist
+rm -rf packages/encoding/dist && mkdir packages/encoding/dist
+rm -rf packages/iter/dist && mkdir packages/iter/dist
+rm -rf packages/memoize/dist && mkdir packages/memoize/dist
+rm -rf packages/objects/dist && mkdir packages/objects/dist
+rm -rf packages/pretty-console/dist && mkdir packages/pretty-console/dist
+rm -rf packages/promises/dist && mkdir packages/promises/dist
+rm -rf packages/strings/dist && mkdir packages/strings/dist
+rm -rf packages/url/dist && mkdir packages/url/dist
+rm -rf packages/index/dist && mkdir packages/index/dist

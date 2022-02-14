@@ -1,12 +1,14 @@
-npm run colors:lib
-npm run numbers:lib
-npm run checkers:lib
-npm run collections:lib
-npm run encoding:lib
-npm run iter:lib
-npm run memoize:lib
-npm run objects:lib
-npm run pretty-console:lib
-npm run promises:lib
-npm run strings:lib
-npm run url:lib
+babel packages/colors/src -d packages/colors/lib
+babel packages/numbers/src -d packages/numbers/lib
+babel packages/commons/src -d packages/commons/lib
+babel packages/checkers/src -d packages/checkers/lib
+babel packages/collections/src -d packages/collections/lib
+babel packages/encoding/src -d packages/encoding/lib
+babel packages/iter/src -d packages/iter/lib
+babel packages/memoize/src -d packages/memoize/lib
+babel packages/objects/src -d packages/objects/lib
+babel packages/pretty-console/src -d packages/pretty-console/lib
+babel packages/promises/src -d packages/promises/lib
+babel packages/strings/src -d packages/strings/lib
+babel packages/url/src -d packages/url/lib
+babel packages/index/src -d packages/index/lib

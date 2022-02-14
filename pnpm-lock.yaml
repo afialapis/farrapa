@@ -48,8 +48,41 @@ importers:
   packages/colors:
     specifiers: {}
 
+  packages/commons:
+    specifiers: {}
+
   packages/encoding:
     specifiers: {}
+
+  packages/index:
+    specifiers:
+      farrapa-checkers: workspace:../checkers
+      farrapa-collections: workspace:../collections
+      farrapa-colors: workspace:../colors
+      farrapa-commons: workspace:../commons
+      farrapa-encoding: workspace:../encoding
+      farrapa-iter: workspace:../iter
+      farrapa-memoize: workspace:../memoize
+      farrapa-numbers: workspace:../numbers
+      farrapa-objects: workspace:../objects
+      farrapa-pretty-console: workspace:../pretty-console
+      farrapa-promises: workspace:../promises
+      farrapa-strings: workspace:../strings
+      farrapa-url: workspace:../url
+    dependencies:
+      farrapa-checkers: link:../checkers
+      farrapa-collections: link:../collections
+      farrapa-colors: link:../colors
+      farrapa-commons: link:../commons
+      farrapa-encoding: link:../encoding
+      farrapa-iter: link:../iter
+      farrapa-memoize: link:../memoize
+      farrapa-numbers: link:../numbers
+      farrapa-objects: link:../objects
+      farrapa-pretty-console: link:../pretty-console
+      farrapa-promises: link:../promises
+      farrapa-strings: link:../strings
+      farrapa-url: link:../url
 
   packages/iter:
     specifiers: {}

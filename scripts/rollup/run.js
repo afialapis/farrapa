@@ -1,10 +1,11 @@
 require('@babel/register')
 
 const package_names= [
-  // these first, other s will depend on them
+  // these first, others will depend on them
   'colors',
   'numbers',
-
+  
+  'commons',
   'checkers',
   'collections',
   'encoding',
@@ -14,7 +15,10 @@ const package_names= [
   'pretty-console',
   'promises',
   'strings',
-  'url'
+  'url',
+
+  // last one, dependant of every other else
+  'index'
 ]
 
 const {dist_all} = require('./dist')

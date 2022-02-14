@@ -1,6 +1,6 @@
 import {parseNum}  from 'farrapa-numbers'
 
-function chunkArray(myArray, chunk_size){
+function arrayChunk(myArray, chunk_size){
   let results = [];
   
   while (myArray.length) {
@@ -10,10 +10,17 @@ function chunkArray(myArray, chunk_size){
   return results;
 }
 
-function sumArray(a) {
+function arraySum(a) {
   return a.reduce((x,y) => x+y, 0);
 }
 
+function arrayRemove (a, element) {
+  let index = a.indexOf(element)
+  if (index > -1) {
+    return a.splice(index, 1)
+  }
+  return []  
+}
 
 
 function _deepGet(obj, path) {
@@ -140,4 +147,4 @@ function collTotalBy(arr, field) {
   return f
 }
 
-export { chunkArray, sumArray, collMatches, collSort, collMaxBy, collTotalBy}
+export { arrayChunk, arraySum, arrayRemove, collMatches, collSort, collMaxBy, collTotalBy}

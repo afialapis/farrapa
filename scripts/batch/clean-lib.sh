@@ -1,12 +1,14 @@
-npm run colors:clean-lib
-npm run numbers:clean-lib
-npm run checkers:clean-lib
-npm run collections:clean-lib
-npm run encoding:clean-lib
-npm run iter:clean-lib
-npm run memoize:clean-lib
-npm run objects:clean-lib
-npm run pretty-console:clean-lib
-npm run promises:clean-lib
-npm run strings:clean-lib
-npm run url:clean-lib
+rm -rf packages/colors/lib && mkdir packages/colors/lib
+rm -rf packages/numbers/lib && mkdir packages/numbers/lib
+rm -rf packages/commons/lib && mkdir packages/commons/lib
+rm -rf packages/checkers/lib && mkdir packages/checkers/lib
+rm -rf packages/collections/lib && mkdir packages/collections/lib
+rm -rf packages/encoding/lib && mkdir packages/encoding/lib
+rm -rf packages/iter/lib && mkdir packages/iter/lib
+rm -rf packages/memoize/lib && mkdir packages/memoize/lib
+rm -rf packages/objects/lib && mkdir packages/objects/lib
+rm -rf packages/pretty-console/lib && mkdir packages/pretty-console/lib
+rm -rf packages/promises/lib && mkdir packages/promises/lib
+rm -rf packages/strings/lib && mkdir packages/strings/lib
+rm -rf packages/url/lib && mkdir packages/url/lib
+rm -rf packages/index/lib && mkdir packages/index/lib
