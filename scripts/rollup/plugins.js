@@ -7,9 +7,11 @@ import { terser } from 'rollup-plugin-terser'
 const NODE_ENV = 'production'
 
 
-const rollupInputPlugins= () => {
+const rollupInputPlugins= (pkgJson) => {
   return [
-    autoExternal(),
+    autoExternal({
+      packagePath: pkgJson
+    }),
     replace({
       preventAssignment: true,
       'process.env.NODE_ENV': JSON.stringify(NODE_ENV)

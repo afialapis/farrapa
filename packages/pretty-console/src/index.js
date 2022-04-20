@@ -1,4 +1,4 @@
-const {magenta, cyan, blue, white, yellow, red} = require('farrapa-colors')
+import {magenta, cyan, blue, white, yellow, red} from 'farrapa-colors'
 
 function logger(color) {
   return function() {
