@@ -13,9 +13,22 @@
     "url": "https://github.com/afialapis/farrapa/issues"
   },
   "homepage": "https://farrapa.afialapis.com/",
-  "main": "lib/index.js",
-  "cjs": "dist/farrapa-checkers.cjs.js",
-  "module": "dist/farrapa-checkers.es.js",
+
+	"type": "module",
+  "main": "./dist/farrapa-checkers.cjs",
+	"exports": {
+		".": [
+			{
+				"import": "./dist/farrapa-checkers.mjs",
+				"require": "./dist/farrapa-checkers.cjs",
+				"default": "./dist/farrapa-checkers.cjs"
+			},
+			"./dist/farrapa-checkers.cjs"
+		]
+	},
+  "cjs": "dist/farrapa-checkers.cjs",
+  "module": "dist/farrapa-checkers.mjs",
   "browser": "dist/farrapa-checkers.umd.js",
+
   "dependencies": {}
 }

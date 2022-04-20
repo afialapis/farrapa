@@ -2,7 +2,7 @@ import path from 'path'
 import {rollupOutputPlugins} from './plugins'
 import {toTitleCase} from '../../packages/strings/src'
 
-const minifyExtension = pathToFile => pathToFile.replace(/\.js$/, '.min.js');
+const minifyExtension = pathToFile => pathToFile.replace(/\.mjs$/, '.min.mjs').replace(/\.cjs$/, '.min.cjs');
 
 const titlefyPkgName = (package_name) => {
   const suffix= package_name.replace('farrapa-', '')

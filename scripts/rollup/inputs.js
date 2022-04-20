@@ -4,7 +4,7 @@ import {rollupInputPlugins} from './plugins'
 
 
 const _pkgDir = (package_name) => path.join(__dirname, `../../packages/${package_name}`)
-const _inputFile = (package_name) => path.join(_pkgDir(package_name), 'src/index.js')
+const _inputFile = (package_name) => path.join(_pkgDir(package_name), 'src/index.mjs')
 const _pkgJson = (package_name) => path.join(_pkgDir(package_name), 'package.json')
 
 

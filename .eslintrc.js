@@ -3,9 +3,16 @@ module.exports = {
   "parser": "@babel/eslint-parser",
   "extends": ["eslint:recommended"],
   "plugins": [],
-  "settings": {},
+  "settings": {
+    "import/extensions": [".mjs", ".js"],
+    "import/resolver": {
+      "node": {
+        "extensions": [".mjs", ".js"]
+      }
+    }		
+	},
   "parserOptions": {
-    "ecmaVersion": 7,
+    "ecmaVersion": 2020,
     "sourceType": "module",
     "ecmaFeatures": {
       "globalReturn ": true,

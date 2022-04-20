@@ -16,7 +16,7 @@
   },
   "homepage": "https://farrapa.afialapis.com/",
   "scripts": {
-    "lint": "eslint packages",
+    "lint": "eslint packages --ext .js,.mjs",
     "test": "node test/index.js",
     "clean-lib": "./scripts/batch/clean-lib.sh",
     "lib": "npm run clean-lib && ./scripts/batch/lib.sh",
@@ -25,7 +25,7 @@
     "dist": "npm run clean-dist && node scripts/rollup/run.js",
     "clean": "npm run clean-lib && npm run clean-dist",
     "reset": "npm run clean && pnpm i",
-    "prepare": "npm run clean && npm run lint && npm run lib && npm run dist",
+    "prepare": "npm run clean && npm run lint && npm run dist",
     "all:publish": "./scripts/batch/publish.sh"
   },
   "keywords": [
