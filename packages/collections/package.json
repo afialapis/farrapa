@@ -13,10 +13,24 @@
     "url": "https://github.com/afialapis/farrapa/issues"
   },
   "homepage": "https://farrapa.afialapis.com/",
-  "main": "lib/index.js",
-  "cjs": "dist/farrapa-collections.cjs.js",
-  "module": "dist/farrapa-collections.es.js",
+
+	"type": "module",
+  "main": "./dist/farrapa-collections.cjs",
+	"exports": {
+		".": [
+			{
+				"import": "./dist/farrapa-collections.mjs",
+				"require": "./dist/farrapa-collections.cjs",
+				"default": "./dist/farrapa-collections.cjs"
+			},
+			"./dist/farrapa-collections.cjs"
+		]
+	},
+  "cjs": "dist/farrapa-collections.cjs",
+  "module": "dist/farrapa-collections.mjs",
   "browser": "dist/farrapa-collections.umd.js",
+
+  
   "dependencies": {
     "farrapa-numbers": "workspace:../numbers"
   },

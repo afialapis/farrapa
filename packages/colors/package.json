@@ -13,10 +13,24 @@
     "url": "https://github.com/afialapis/farrapa/issues"
   },
   "homepage": "https://farrapa.afialapis.com/",
-  "main": "lib/index.js",
-  "cjs": "dist/farrapa-colors.cjs.js",
-  "module": "dist/farrapa-colors.es.js",
+
+	"type": "module",
+  "main": "./dist/farrapa-colors.cjs",
+	"exports": {
+		".": [
+			{
+				"import": "./dist/farrapa-colors.mjs",
+				"require": "./dist/farrapa-colors.cjs",
+				"default": "./dist/farrapa-colors.cjs"
+			},
+			"./dist/farrapa-colors.cjs"
+		]
+	},
+  "cjs": "dist/farrapa-colors.cjs",
+  "module": "dist/farrapa-colors.mjs",
   "browser": "dist/farrapa-colors.umd.js",
+
+  
   "dependencies": {},
   "scripts": {
     "codes": "node make/codes.js"
