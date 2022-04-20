@@ -20,10 +20,10 @@ const rollupInputPlugins= () => {
       exclude: 'node_modules/**',
       /*https://github.com/rollup/plugins/tree/master/packages/babel#babelhelpers*/
       babelHelpers: 'bundled',
-      /*
+      
       presets: [
           ["@babel/preset-env", {"targets": {"esmodules": true}}]
-      ]*/
+      ]
 
     })    
   ]

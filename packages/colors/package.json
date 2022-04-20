@@ -17,5 +17,8 @@
   "cjs": "dist/farrapa-colors.cjs.js",
   "module": "dist/farrapa-colors.es.js",
   "browser": "dist/farrapa-colors.umd.js",
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    "codes": "node make/codes.js"
+  }
 }

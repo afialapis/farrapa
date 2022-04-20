@@ -11,7 +11,7 @@
 // }
 
 
-module.exports = function(target, key, descriptor) {
+const memoize = function(target, key, descriptor) {
   const fType = descriptor.get ? 'get' : 'value';
   const fn = descriptor[fType];
   const char0 = String.fromCharCode(0);
@@ -45,6 +45,7 @@ module.exports = function(target, key, descriptor) {
   return descriptor;
 };
 
+export {memoize}
 
 /*
 

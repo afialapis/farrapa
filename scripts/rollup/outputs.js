@@ -44,14 +44,14 @@ const rollupOutputs = (package_name) => {
     // ES module
     {
       file: resolve_to_pkg(packageJSON.module),
-      format: 'es',
+      format: 'esm',
       exports: 'named',
       plugins: rollupOutputPlugins(false)
     },
     // ES module .min
     {
       file: minifyExtension(resolve_to_pkg(packageJSON.module)),
-      format: 'es',
+      format: 'esm',
       exports: 'named',
       plugins: rollupOutputPlugins(true)
     },
