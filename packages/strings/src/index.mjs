@@ -4,6 +4,10 @@ function lpad(n, width, z) {
   return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
 }
 
+function ltrim(s) {
+  return s.replace(/^\s+/,"");
+}
+
 // based on https://stackoverflow.com/a/18123682/1141611
 // not complete, but probably good enough
 function slugify(str) {
@@ -42,4 +46,4 @@ function toTitleCase(str) {
 }
 
 
-export {lpad, slugify, hashFromString, toTitleCase}
+export {lpad, ltrim, slugify, hashFromString, toTitleCase}
