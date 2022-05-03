@@ -1,4 +1,9 @@
-const uncolor = (s) => s.replace(/\\u001b\[.*?m/g, '')
+const uncolor = (s) => 
+   // eslint-disable-next-line no-control-regex
+   s.replace(/[\u001b\u009b][[()#;?]*(?:[0-9]{1,4}(?:;[0-9]{0,4})*)?[0-9A-ORZcf-nqry=><]/g, '')
+   //.replace(/\\u001b\[.*?m/g, '')
+   //.replace(/\033\[[0-9;]*m/,"")   
+   //.replace(/\[0;31m/g, '')
 
 function isTooDark(col) {
   try {
