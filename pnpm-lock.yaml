@@ -4,9 +4,9 @@ importers:
 
   .:
     specifiers:
-      xeira: 0.1.0-beta.3
+      xeira: ^0.1.0
     devDependencies:
-      xeira: 0.1.0-beta.3
+      xeira: 0.1.0
 
   packages/checkers:
     specifiers: {}
@@ -7073,8 +7073,8 @@ packages:
         optional: true
     dev: true
 
-  /xeira/0.1.0-beta.3:
-    resolution: {integrity: sha512-C+7j8bHTvjEIETNFQV8zxcsWzA8C3sPsogSQmnlGCtIhb/8SjabJXCMVcM+ZsEbjk3e8hbLBTFytDyMGDuZOXQ==}
+  /xeira/0.1.0:
+    resolution: {integrity: sha512-xiieZB4XBec/Esvg00lgH7q3GGAAIcgVWB41E8JTe//YvCjlbAHSOve2z+KTxPj2WDBzMyZXtNFOUDL00xGdRw==}
     hasBin: true
     dependencies:
       '@babel/cli': 7.21.0_@babel+core@7.21.0
