@@ -1,0 +1,9 @@
+{
+  "theme": "default",
+  "favicon": "./logo/favicon/farrapa.png",
+  "logo": "./logo/farrapa.png",
+  "company": "Afialapis",
+  "url": "farrapa.afialapis.com",
+  "doc_versions": ["1.0.7"],
+  "demo_entry": null
+}

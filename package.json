@@ -7,6 +7,7 @@
     "Donato Lorenzo <donato@afialapis.com>"
   ],
   "license": "MIT",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/afialapis/farrapa.git"
@@ -24,7 +25,8 @@
     "dist": "npm run clean-dist && ./script.sh dist",
     "clean": "npm run clean-lib && npm run clean-dist",
     "reset": "npm run clean && pnpm i",
-    "prepare": "npm run clean && npm run lint && npm run dist",
+    "site": "rm -fr arredemo && npx xeira site",
+    "prepare": "npm run clean && npm run lint && npm run dist && npm run site",
     "all:publish": "./script.sh publish"
   },
   "keywords": [
