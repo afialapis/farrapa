@@ -30,8 +30,8 @@ do
     npx xeira bundle --filter=./packages/$i --source_index=./src/index.mjs
     
   elif [ $1 = "version" ]; then
-    echo "Versioning on $i"
-    npx xeira version --filter=./packages/$i $1 
+    echo "Versioning on $i to $2"
+    npx xeira version --filter=./packages/$i --number=$2
     
   elif [ $1 = "publish" ]; then
     echo "Publishing $i"
