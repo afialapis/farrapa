@@ -1,13 +1,12 @@
 {
   "name": "farrapa",
-  "private": true,
+  "version": "2.0.0-beta.1",
   "description": "diverse utils used by afialapis",
   "author": "Donato Lorenzo <donato@afialapis.com>",
   "contributors": [
     "Donato Lorenzo <donato@afialapis.com>"
   ],
   "license": "MIT",
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/afialapis/farrapa.git"
@@ -16,25 +15,115 @@
     "url": "https://github.com/afialapis/farrapa/issues"
   },
   "homepage": "https://farrapa.afialapis.com/",
+  "type": "module",
+
+  "main": "./lib/index.cjs",
+  "exports": {
+    ".": {
+      "import": "./src/index.mjs",
+      "require": "./lib/index.cjs",
+      "default": "./lib/index.cjs"
+    },  
+    "./colors": {
+      "import": "./src/colors/index.mjs", 
+      "require": "./lib/colors/index.cjs", 
+      "default": "./lib/colors/index.cjs" 
+    },
+    "./numbers": {
+      "import": "./src/numbers/index.mjs", 
+      "require": "./lib/numbers/index.cjs", 
+      "default": "./lib/numbers/index.cjs" 
+    },
+    "./commons": {
+      "import": "./src/commons/index.mjs", 
+      "require": "./lib/commons/index.cjs", 
+      "default": "./lib/commons/index.cjs" 
+    },
+    "./checkers": {
+      "import": "./src/checkers/index.mjs", 
+      "require": "./lib/checkers/index.cjs", 
+      "default": "./lib/checkers/index.cjs" 
+    },
+    "./collections": {
+      "import": "./src/collections/index.mjs", 
+      "require": "./lib/collections/index.cjs", 
+      "default": "./lib/collections/index.cjs" 
+    },
+    "./encoding": {
+      "import": "./src/encoding/index.mjs", 
+      "require": "./lib/encoding/index.cjs", 
+      "default": "./lib/encoding/index.cjs" 
+    },
+    "./iter": {
+      "import": "./src/iter/index.mjs", 
+      "require": "./lib/iter/index.cjs", 
+      "default": "./lib/iter/index.cjs" 
+    },
+    "./memoize": {
+      "import": "./src/memoize/index.mjs", 
+      "require": "./lib/memoize/index.cjs", 
+      "default": "./lib/memoize/index.cjs" 
+    },
+    "./objects": {
+      "import": "./src/objects/index.mjs", 
+      "require": "./lib/objects/index.cjs", 
+      "default": "./lib/objects/index.cjs" 
+    },
+    "./pretty-console": {
+      "import": "./src/pretty-console/index.mjs", 
+      "require": "./lib/pretty-console/index.cjs", 
+      "default": "./lib/pretty-console/index.cjs" 
+    },
+    "./promises": {
+      "import": "./src/promises/index.mjs", 
+      "require": "./lib/promises/index.cjs", 
+      "default": "./lib/promises/index.cjs" 
+    },
+    "./strings": {
+      "import": "./src/strings/index.mjs", 
+      "require": "./lib/strings/index.cjs", 
+      "default": "./lib/strings/index.cjs" 
+    },
+    "./url": {
+      "import": "./src/url/index.mjs", 
+      "require": "./lib/url/index.cjs", 
+      "default": "./lib/url/index.cjs" 
+    }
+  },
+  "cjs": "dist/farrapa.cjs",
+  "module": "dist/farrapa.mjs",
+  "browser": "dist/farrapa.umd.js",
+
   "scripts": {
-    "lint": "./script.sh lint",
-    "clean-lib": "./script.sh clean-lib",
-    "lib": "npm run clean-lib && ./script.sh lib",
-    "versioning": "./script.sh version",
-    "clean-dist": "./script.sh clean-dist",
-    "dist": "npm run clean-dist && ./script.sh dist",
+    "x_lint": "./script.sh lint",
+    "x_clean-lib": "./script.sh clean-lib",
+    "x_lib": "npm run clean-lib && ./script.sh lib",
+    "x_versioning": "./script.sh version",
+    "x_clean-dist": "./script.sh clean-dist",
+    "x_dist": "npm run clean-dist && ./script.sh dist",
+    "x_clean": "npm run clean-lib && npm run clean-dist",
+    "x_reset": "npm run clean && pnpm i",
+    "x_site": "rm -fr arredemo && npx xeira site",
+    "x_prepare": "npm run clean && npm run lint && npm run dist && npm run site",
+    "x_all:publish": "./script.sh publish",
+    
+    "lint": "npx xeira lint --folder=./src",
+    "clean-lib": "rm -fr ./lib && mkdir lib",
+    "lib": "npx xeira transpile --source_index=./src/index.mjs --minifier=null",
+    "clean-dist": "rm -fr ./dist && mkdir dist",
+    "dist": "npx xeira bundle --source_index=./src/index.mjs",
     "clean": "npm run clean-lib && npm run clean-dist",
-    "reset": "npm run clean && pnpm i",
-    "site": "rm -fr arredemo && npx xeira site",
-    "prepare": "npm run clean && npm run lint && npm run dist && npm run site",
-    "all:publish": "./script.sh publish"
+    "reset": "npm run clean && rm -fr package-lock.json node_modules && npm i",
+    "site": "npx xeira site",
+    "prepare":  "npm run clean && npm run lint && npm run dist && npm run site"
+
   },
   "keywords": [
     "js",
     "util"
   ],
   "devDependencies": {
-    "xeira": "^0.1.0"
+    "xeira": "^0.1.1"
   },
   "eslintConfig": {
     "extends": [

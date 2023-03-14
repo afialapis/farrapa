@@ -4,6 +4,6 @@
   "logo": "./logo/farrapa.png",
   "company": "Afialapis",
   "url": "farrapa.afialapis.com",
-  "doc_versions": ["1.0.7"],
+  "doc_versions": null,
   "demo_entry": null
 }

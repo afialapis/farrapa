@@ -5,10 +5,26 @@
 `farrapa` packages just bring some low level, not crucial but usual tools you may need.
 At least [we](https://github.com/afialapis) need them!
 
-Tools are split in different packages. So you need to install them individually.
+Tools are split in different import paths. So your bundle size won't be affected.
 
+For example:
 
-# farrapa-colors
+```js
+
+import {collTotalBy} from 'farrapa/collections'
+
+const people= [
+  {'name': 'Peter', 'age': 27},
+  {'name': 'Lillah', 'age': 32},
+  {'name': 'Freddie', 'age': 41},
+]
+
+const total = colLTotalBy(people, 'age')
+
+// 100
+```
+
+# farrapa/colors
 
 ## Color functions
 
@@ -44,7 +60,7 @@ Returns `true` for dark colors.
 ### `randomHex()`
 
 
-# farrapa-numbers
+# farrapa/numbers
 
 ## `asDecimal(n, d)`
 
@@ -55,12 +71,12 @@ Returns `true` for dark colors.
 ## `parseNum(n)`
 
 
-# farrapa-commons
+# farrapa/commons
 
 ## `uvl(value, defValue)`
 
 
-# farrapa-checkers
+# farrapa/checkers
 
 ## `isValidId(id)`
 
@@ -71,7 +87,7 @@ Returns `true` for dark colors.
 ## `isValidURL(address)`
 
 
-# farrapa-collections
+# farrapa/collections
 
 ## `collMatches(coll, params)`
 
@@ -82,7 +98,7 @@ Returns `true` for dark colors.
 ## `collTotalBy(arr, field)`
 
 
-# farrapa-encoding
+# farrapa/encoding
 
 ## `b64toBlob(b64Data, contentType = '', sliceSize = 512)`
 
@@ -93,16 +109,16 @@ Returns `true` for dark colors.
 ## `b64Size(base64)`
 
 
-# farrapa-iter
+# farrapa/iter
 
 ## `range(f, t)`
 
 
-# farrapa-memoize
+# farrapa/memoize
 
 ## `memoize(target, key, descriptor)`
 
-# farrapa-objects
+# farrapa/objects
 
 ## `isEmptyObject(o)`
 
@@ -111,7 +127,7 @@ Returns `true` for dark colors.
 ## `objClone (obj)`
 
 
-# farrapa-pretty-console
+# farrapa/pretty-console
 
 After `import * from "farrapa-pretty-console"`, `console` output will be colored like:
 
@@ -122,11 +138,11 @@ After `import * from "farrapa-pretty-console"`, `console` output will be colored
   - console.warn    : yellow 
   - console.error   : red    
 
-# farrapa-promises
+# farrapa/promises
 
 ## `sleep(ms)`
 
-# farrapa-strings
+# farrapa/strings
 
 ## `lpad(n, width, z)`
 
@@ -138,7 +154,7 @@ After `import * from "farrapa-pretty-console"`, `console` output will be colored
 
 ## `toTitleCase(str)`
 
-# farrapa-url
+# farrapa/url
 
 ## `queryStringToJson(url)` 
 
