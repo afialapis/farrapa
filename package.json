@@ -1,6 +1,6 @@
 {
   "name": "farrapa",
-  "version": "2.0.0-beta.2",
+  "version": "2.0.0",
   "description": "diverse utils used by afialapis",
   "author": "Donato Lorenzo <donato@afialapis.com>",
   "contributors": [
@@ -103,18 +103,6 @@
   "browser": "dist/farrapa.umd.js",
 
   "scripts": {
-    "x_lint": "./script.sh lint",
-    "x_clean-lib": "./script.sh clean-lib",
-    "x_lib": "npm run clean-lib && ./script.sh lib",
-    "x_versioning": "./script.sh version",
-    "x_clean-dist": "./script.sh clean-dist",
-    "x_dist": "npm run clean-dist && ./script.sh dist",
-    "x_clean": "npm run clean-lib && npm run clean-dist",
-    "x_reset": "npm run clean && pnpm i",
-    "x_site": "rm -fr arredemo && npx xeira site",
-    "x_prepare": "npm run clean && npm run lint && npm run dist && npm run site",
-    "x_all:publish": "./script.sh publish",
-    
     "lint": "npx xeira lint --folder=./src",
     "clean-lib": "rm -fr ./lib && mkdir lib",
     "lib": "npx xeira transpile --source_index=./src/index.mjs --minifier=null",
@@ -124,7 +112,6 @@
     "reset": "npm run clean && rm -fr package-lock.json node_modules && npm i",
     "site": "npx xeira site",
     "prepare":  "npm run clean && npm run lint && npm run lib && npm run dist && npm run site"
-
   },
   "keywords": [
     "js",

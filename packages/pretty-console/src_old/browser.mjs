@@ -1,7 +1,0 @@
-console.silly  = console.log.bind(console, '%cSLY', 'color: #e0e0d1; font-weight: normal')
-console.debug  = console.log.bind(console, '%cDBG', 'color: #c2c2a3; font-weight: bold')
-console.verbose= console.log.bind(console, '%cVRB', 'color: #999966; font-weight: bold')
-console.info   = console.log.bind(console, '%cINF', 'color: #ffff00; font-weight: bold')
-console.warn   = console.log.bind(console, '%cWRN', 'color: #e67300; font-weight: bold')
-console.error  = console.log.bind(console, '%cERR', 'color: #ff0000; font-weight: bold')
-console.query  = console.log.bind(console, '%cQRY', 'color: #e0e0d1; font-weight: normal')
