@@ -62,19 +62,19 @@ import {
   gray_under, 
   gray_invert, 
   gray_strike  
-} from './codes'
+} from './codes.mjs'
 
 import { 
   uncolor, 
   isTooDark, 
   shadeColor, 
   blendColors
- } from './mods'
+ } from './mods.mjs'
 
 import {
   hslToHex, 
   randomHex
-} from './hex'
+} from './hex.mjs'
 
 export { 
   black, 
