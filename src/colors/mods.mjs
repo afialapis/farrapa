@@ -1,10 +1,3 @@
-const uncolor = (s) => 
-   // eslint-disable-next-line no-control-regex
-   s.replace(/[\u001b\u009b][[()#;?]*(?:[0-9]{1,4}(?:;[0-9]{0,4})*)?[0-9A-ORZcf-nqry=><]/g, '')
-   //.replace(/\\u001b\[.*?m/g, '')
-   //.replace(/\033\[[0-9;]*m/,"")   
-   //.replace(/\[0;31m/g, '')
-
 function isTooDark(col) {
   try {
     const c = col.substring(1);   // strip #
@@ -34,8 +27,7 @@ function blendColors(c0, c1, p) {
 
 
 
-export { uncolor, 
-         isTooDark, 
+export { isTooDark, 
          shadeColor, 
          blendColors
         }

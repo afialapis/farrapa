@@ -61,11 +61,11 @@ import {
   gray_italic, 
   gray_under, 
   gray_invert, 
-  gray_strike  
-} from './codes.mjs'
+  gray_strike,
+  uncolor
+} from 'tinguir'
 
 import { 
-  uncolor, 
   isTooDark, 
   shadeColor, 
   blendColors
