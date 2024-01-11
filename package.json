@@ -14,7 +14,7 @@
   "bugs": {
     "url": "https://github.com/afialapis/farrapa/issues"
   },
-  "homepage": "https://farrapa.afialapis.com/",
+  "homepage": "https://www.afialapis.com/os/farrapa",
   "files": [
     "package.json",
     "src",
@@ -116,7 +116,7 @@
     "util"
   ],
   "devDependencies": {
-    "xeira": "^0.3.24"
+    "xeira": "^0.3.26"
   },
   "eslintConfig": {
     "extends": [

@@ -1,4 +1,4 @@
-![farrapa logo](https://farrapa.afialapis.com/logo.png)
+![farrapa logo](https://www.afialapis.com/os/farrapa/logo.png)
 
 > Small utils that bring great satisfactions
 

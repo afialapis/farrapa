@@ -2,8 +2,9 @@
   "theme": "default",
   "favicon": "./logo/favicon/farrapa.png",
   "logo": "./logo/farrapa.png",
+  "url": "https://www.afialapis.com/os/farrapa",
   "company": "Afialapis",
-  "url": "farrapa.afialapis.com",
+  "company_url": "https://www.afialapis.com",
   "doc_versions": null,
   "demo_entry": null
 }
