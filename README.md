@@ -126,6 +126,8 @@ Returns `true` for dark colors.
 
 ## `objClone (obj)`
 
+## `objAreEqual (obj1, obj2, ...objN)`
+
 
 # farrapa/pretty-console
 
