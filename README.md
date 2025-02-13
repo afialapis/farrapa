@@ -1,6 +1,7 @@
 # farrapa
 [![NPM Version](https://badge.fury.io/js/farrapa.svg)](https://www.npmjs.com/package/farrapa)
 [![NPM Downloads](https://img.shields.io/npm/dm/farrapa.svg?style=flat)](https://www.npmjs.com/package/farrapa)
+
 ![farrapa logo](https://github.com/afialapis/farrapa/blob/main/logo/favicon/farrapa.png?raw=true)
 
 ---
