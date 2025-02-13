@@ -116,7 +116,7 @@
     "util"
   ],
   "devDependencies": {
-    "xeira": "^1.0.0"
+    "xeira": "^1.0.1"
   },
   "eslintConfig": {
     "extends": [

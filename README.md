@@ -41,9 +41,7 @@ const total = colLTotalBy(people, 'age')
 ```
 
 ## farrapa/colors
-
-### Working with HEX color codes
-
+ 
  * `isTooDark(hexColor)`: Returns `true` for dark colors.
  * `shadeColor(hexColor, percent)`
  * `blendColors(hexColor1, hexColor2, percent)`
