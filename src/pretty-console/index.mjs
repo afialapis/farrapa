@@ -1,4 +1,4 @@
-import {magenta, cyan, blue, white, yellow, red} from '../colors/index.mjs'
+import {magenta, cyan, blue, white, yellow, red} from 'tinguir'
 
 function logger(color) {
   return function() {

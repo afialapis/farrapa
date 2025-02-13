@@ -1,4 +1,21 @@
+# farrapa
+[![NPM Version](https://badge.fury.io/js/farrapa.svg)](https://www.npmjs.com/package/farrapa)
+[![NPM Downloads](https://img.shields.io/npm/dm/farrapa.svg?style=flat)](https://www.npmjs.com/package/farrapa)
 ![farrapa logo](https://www.afialapis.com/os/farrapa/logo.png)
+
+---
+
+> **[farrapa](https://academia.gal/dicionario/-/termo/farrapa)**
+
+
+> **2** Manta feita con anacos de tea de diversas e diferentes cores.
+
+> _Colocou unha farrapa aos pés da cama._
+
+---
+
+
+## Intro
 
 > Small utils that bring great satisfactions
 
@@ -24,112 +41,93 @@ const total = colLTotalBy(people, 'age')
 // 100
 ```
 
-# farrapa/colors
+## farrapa/colors
 
-## Color functions
+### Working with HEX color codes
 
-### `black(string)`, `red(string)`, `green(string)`, ...
-
-Colorize your texts! Available color functions are :
-`black`, `black_bold`, `black_light`, `black_italic`, `black_under`, `black_invert`, `black_strike`,
-`red`, `red_bold`, `red_light`, `red_italic`, `red_under`, `red_invert`, `red_strike`,
-`green`, `green_bold`, `green_light`, `green_italic`, `green_under`, `green_invert`, `green_strike`,
-`yellow`, `yellow_bold`, `yellow_light`, `yellow_italic`, `yellow_under`, `yellow_invert`, `yellow_strike`,
-`blue`, `blue_bold`, `blue_light`, `blue_italic`, `blue_under`, `blue_invert`, `blue_strike`,
-`magenta`, `magenta_bold`, `magenta_light`, `magenta_italic`, `magenta_under`, `magenta_invert`, `magenta_strike`,
-`cyan`, `cyan_bold`, `cyan_light`, `cyan_italic`, `cyan_under`, `cyan_invert`, `cyan_strike`,
-`white`, `white_bold`, `white_light`, `white_italic`, `white_under`, `white_invert`, `white_strike`,
-`gray`, `gray_bold`, `gray_light`, `gray_italic`, `gray_under`, `gray_invert`, `gray_strike`.
-
-### `uncolor(string)`
-
-It removes color codes from an already colorized string.
-
-## Working with HEX color codes
-
-### `isTooDark(hexColor)`
+#### `isTooDark(hexColor)`
 
 Returns `true` for dark colors.
 
-### `shadeColor(hexColor, percent)`
+#### `shadeColor(hexColor, percent)`
 
-### `blendColors(hexColor1, hexColor2, percent)`
+#### `blendColors(hexColor1, hexColor2, percent)`
 
-### `hslToHex(h, s, l)`
+#### `hslToHex(h, s, l)`
 
-### `randomHex()`
-
-
-# farrapa/numbers
-
-## `asDecimal(n, d)`
-
-## `asPrice(n)`
-
-## `asPriceWithCurrency(n)`
-
-## `parseNum(n)`
+#### `randomHex()`
 
 
-# farrapa/commons
+## farrapa/numbers
 
-## `uvl(value, defValue)`
+### `asDecimal(n, d)`
+
+### `asPrice(n)`
+
+### `asPriceWithCurrency(n)`
+
+### `parseNum(n)`
 
 
-# farrapa/checkers
+## farrapa/commons
 
-## `isValidId(id)`
+### `uvl(value, defValue)`
 
-## `isValidEmail(email)`
+
+## farrapa/checkers
+
+### `isValidId(id)`
+
+### `isValidEmail(email)`
   
-## `isValidHostnameOrIp(address)`
+### `isValidHostnameOrIp(address)`
 
-## `isValidURL(address)`
-
-
-# farrapa/collections
-
-## `collMatches(coll, params)`
-
-## `collSort(coll, by, order)`
-
-## `collMaxBy(coll, fld)`
-
-## `collTotalBy(arr, field)`
+### `isValidURL(address)`
 
 
-# farrapa/encoding
+## farrapa/collections
 
-## `b64toBlob(b64Data, contentType = '', sliceSize = 512)`
+### `collMatches(coll, params)`
 
-## `uint8arrayToBase64(bytes)`
+### `collSort(coll, by, order)`
 
-## `arrayBufferToBase64(arrayBuffer)`
+### `collMaxBy(coll, fld)`
 
-## `b64Size(base64)`
-
-
-# farrapa/iter
-
-## `range(f, t)`
+### `collTotalBy(arr, field)`
 
 
-# farrapa/memoize
+## farrapa/encoding
 
-## `memoize(target, key, descriptor)`
+### `b64toBlob(b64Data, contentType = '', sliceSize = 512)`
 
-# farrapa/objects
+### `uint8arrayToBase64(bytes)`
 
-## `isEmptyObject(o)`
+### `arrayBufferToBase64(arrayBuffer)`
 
-## `objFilter(obj, func)`
-
-## `objClone (obj)`
-
-## `objAreEqual (obj1, obj2, ...objN)`
+### `b64Size(base64)`
 
 
-# farrapa/pretty-console
+## farrapa/iter
+
+### `range(f, t)`
+
+
+## farrapa/memoize
+
+### `memoize(target, key, descriptor)`
+
+## farrapa/objects
+
+### `isEmptyObject(o)`
+
+### `objFilter(obj, func)`
+
+### `objClone (obj)`
+
+### `objAreEqual (obj1, obj2, ...objN)`
+
+
+## farrapa/pretty-console
 
 After `import * from "farrapa-pretty-console"`, `console` output will be colored like:
 
@@ -140,23 +138,23 @@ After `import * from "farrapa-pretty-console"`, `console` output will be colored
   - console.warn    : yellow 
   - console.error   : red    
 
-# farrapa/promises
+## farrapa/promises
 
-## `sleep(ms)`
+### `sleep(ms)`
 
-# farrapa/strings
+## farrapa/strings
 
-## `lpad(n, width, z)`
+### `lpad(n, width, z)`
 
-## `ltrim(s)`
+### `ltrim(s)`
 
-## `slugify(str)`
+### `slugify(str)`
 
-## `hashFromString(s)`
+### `hashFromString(s)`
 
-## `toTitleCase(str)`
+### `toTitleCase(str)`
 
-# farrapa/url
+## farrapa/url
 
-## `queryStringToJson(url)` 
+### `queryStringToJson(url)` 
 
