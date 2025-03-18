@@ -19,7 +19,7 @@
 
 > Small utils that bring great satisfactions
 
-`farrapa` packages just bring some low level, not crucial but usual tools you may need.
+[`farrapa`](https://www.afialapis.com/os/farrapa) packages just bring some low level, not crucial but usual tools you may need.
 At least [we](https://github.com/afialapis) need them!
 
 Tools are split in different import paths. So your bundle size won't be affected.

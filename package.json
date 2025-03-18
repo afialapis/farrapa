@@ -1,6 +1,6 @@
 {
   "name": "farrapa",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "diverse utils used by afialapis",
   "author": "Donato Lorenzo <donato@afialapis.com>",
   "contributors": [
@@ -116,7 +116,7 @@
     "util"
   ],
   "devDependencies": {
-    "xeira": "^1.0.1"
+    "xeira": "^1.1.0"
   },
   "eslintConfig": {
     "extends": [
