@@ -9,7 +9,10 @@ function queryStringToJson(url) {
         const name= pair[0]
         const value= pair[1]
 
-        result[name] = decodeURIComponent(value || '')
+        // Replace '+' with space and decode URI component
+        // If you want to pass '+'in the query string, you can encode it as '%2B'
+        ///   value.replace(/\+/g, '%2B')
+        result[name] = decodeURIComponent((value || '').replace(/\+/g, ' '))
     })
     return JSON.parse(JSON.stringify(result))
   }
