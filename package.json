@@ -1,6 +1,6 @@
 {
   "name": "farrapa",
-  "version": "2.3.2",
+  "version": "3.0.0-beta.1",
   "description": "diverse utils used by afialapis",
   "author": "Donato Lorenzo <donato@afialapis.com>",
   "contributors": [
@@ -116,12 +116,7 @@
     "util"
   ],
   "devDependencies": {
-    "xeira": "^1.2.0"
-  },
-  "eslintConfig": {
-    "extends": [
-      "./node_modules/xeira/configs/eslint.cjs"
-    ]
+    "xeira": "^2.0.0-beta.3"
   },
   "dependencies": {
     "tinguir": "^0.0.7"
