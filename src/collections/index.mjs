@@ -1,68 +1,62 @@
-import {parseNum}  from '../numbers/index.mjs'
+import { parseNum } from "../numbers/index.mjs"
 
-function arrayChunk(myArray, chunk_size){
-  let results = [];
-  
+function arrayChunk(myArray, chunk_size) {
+  const results = []
+
   while (myArray.length) {
-      results.push(myArray.splice(0, chunk_size));
+    results.push(myArray.splice(0, chunk_size))
   }
-  
-  return results;
+
+  return results
 }
 
 function arraySum(a) {
-  return a.reduce((x,y) => x+y, 0);
+  return a.reduce((x, y) => x + y, 0)
 }
 
-function arrayRemove (a, element) {
-  let index = a.indexOf(element)
+function arrayRemove(a, element) {
+  const index = a.indexOf(element)
   if (index > -1) {
     return a.splice(index, 1)
   }
-  return []  
+  return []
 }
-
 
 function _deepGet(obj, path) {
-  return path.split('.').reduce(function (prev, curr) {
-    return prev ? prev[curr] : undefined
-  }, obj || self)
+  return path.split(".").reduce((prev, curr) => (prev ? prev[curr] : undefined), obj || self)
 }
-
-
 
 function collMatches(coll, params) {
   const fdata = coll.filter((d) => {
     const _pflds = Object.keys(params)
-    let valids= 0;
+    let valids = 0
     let eqs = 0
     for (const idx in _pflds) {
       const fld = _pflds[idx]
-      if (d[fld]!=undefined) {
+      if (d[fld] !== undefined) {
         valids += 1
-        if (d[fld] == params[fld]) {
+        if (d[fld] === params[fld]) {
           eqs += 1
         } else {
           if (Array.isArray(params[fld])) {
-            if (params[fld].indexOf(d[fld])>=0) {
+            if (params[fld].indexOf(d[fld]) >= 0) {
               eqs += 1
             }
           }
         }
       }
     }
-    return (eqs == valids)
+    return eqs === valids
   })
   return fdata
 }
 
-
 function collSort(coll, by, order) {
-  if (by==undefined) {
+  if (by === undefined) {
     return coll
   }
-  const ft = order=='desc' ? -1 : 1
-  return coll.slice().sort(function (a, b) {
+  const ft = order === "desc" ? -1 : 1
+  return coll.slice().sort((a, b) => {
     /*
     const fa = a[by].toLowerCase(), fb = b[by].toLowerCase()
     if (fa < fb) //sort string ascending
@@ -71,33 +65,32 @@ function collSort(coll, by, order) {
       return 1 * ft
     return 0 //default return value (no sorting)
     */
-   //return (a[by]-b[by])*ft
-   let av,bv
+    //return (a[by]-b[by])*ft
+    let av, bv
 
-   if (typeof by == 'object') {
-    
-    av = _deepGet(a, by.field)
-    bv = _deepGet(b, by.field)
-    av= by.map[av] || ''
-    bv= by.map[bv] || ''
-   } else if (typeof by == 'function') {
-    av = by(a) || ''
-    bv = by(b) || ''
-   } else {
-    av = _deepGet(a, by)
-    bv = _deepGet(b, by)
-   }
-   if (typeof av == 'string' && typeof bv == 'string') {
-     av= av.toLowerCase()
-     bv= bv.toLowerCase()
-   }
+    if (typeof by === "object") {
+      av = _deepGet(a, by.field)
+      bv = _deepGet(b, by.field)
+      av = by.map[av] || ""
+      bv = by.map[bv] || ""
+    } else if (typeof by === "function") {
+      av = by(a) || ""
+      bv = by(b) || ""
+    } else {
+      av = _deepGet(a, by)
+      bv = _deepGet(b, by)
+    }
+    if (typeof av === "string" && typeof bv === "string") {
+      av = av.toLowerCase()
+      bv = bv.toLowerCase()
+    }
 
-    if (av < bv) //sort string ascending
+    if (av < bv)
+      //sort string ascending
       return -1 * ft
-    if (av > bv)
-      return 1 * ft
+    if (av > bv) return 1 * ft
     return 0
-  })  
+  })
 }
 
 /*
@@ -129,22 +122,20 @@ https://stackoverflow.com/a/10124053
 
 */
 
-
 function collMaxBy(coll, fld) {
-  let m= -99999;
-  coll.map((c) => {
-    if (c[fld]!=undefined)
-      m= Math.max(m, c[fld])
+  let m = -99999
+  coll.forEach((c) => {
+    if (c[fld] !== undefined) m = Math.max(m, c[fld])
   })
-  return coll.find((c) => c[fld]==m)
+  return coll.find((c) => c[fld] === m)
 }
 
 function collTotalBy(arr, field) {
   let f = parseFloat(0)
-  arr.map((d) => {
+  arr.forEach((d) => {
     f += parseNum(d[field])
   })
   return f
 }
 
-export { arrayChunk, arraySum, arrayRemove, collMatches, collSort, collMaxBy, collTotalBy}
+export { arrayChunk, arraySum, arrayRemove, collMatches, collSort, collMaxBy, collTotalBy }

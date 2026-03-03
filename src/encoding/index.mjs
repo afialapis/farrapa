@@ -1,11 +1,3 @@
-import { 
-  b64toBlob, 
-  uint8arrayToBase64, 
-  arrayBufferToBase64, 
-  b64Size } from './base64.mjs'
+import { arrayBufferToBase64, b64Size, b64toBlob, uint8arrayToBase64 } from "./base64.mjs"
 
-export { 
-  b64toBlob, 
-  uint8arrayToBase64, 
-  arrayBufferToBase64, 
-  b64Size }
+export { b64toBlob, uint8arrayToBase64, arrayBufferToBase64, b64Size }
